@@ -1,0 +1,40 @@
+/* -------- Paramètres de Base -------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* -------- Couleurs Site -------- */
+
+body{
+  --bgcolor:linear-gradient(90deg, #2a3235, #4f4f4f);
+  --textcolor: #fff;
+  --maincolor: #a9a9a9;
+}
+
+body.dark-mode{
+  --bgcolor:white;
+  --textcolor:black;
+  --maincolor: #a9a9a9;
+}
+
+.bx-moon{
+  color:white;
+}
+
+#theme-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* -------- Couleur Bouton -------- */
+:root{
+  --g:#4f4f4f;
+  --deg3:rgb(133, 133, 133);
+}
+

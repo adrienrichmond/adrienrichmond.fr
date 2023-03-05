@@ -1,0 +1,16 @@
+ErrorDocument 404 /404.html
+
+# Page de maintenance
+#RewriteEngine on
+#RewriteCond %{REQUEST_URI} !/maintenance.html$
+#RewriteCond %{REQUEST_URI} !css/maintenance.css$
+#RewriteCond %{REQUEST_URI} !css/settings.css$
+#RewriteCond %{REQUEST_URI} !img/maintenance.png$
+#RewriteCond %{REMOTE_ADDR} !^77/.130./153/.25
+#RewriteRule $ /maintenance.html [R=302,L]
+
+#Redirection HTML
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]

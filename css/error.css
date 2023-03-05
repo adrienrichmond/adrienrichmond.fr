@@ -1,0 +1,102 @@
+/* -------- Propriété du site -------- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  background: var(--deg1);
+  overflow: hidden;
+}
+
+/* -------- Encard erreur 404 -------- */
+
+.error-page{
+  position: absolute;
+  top:25%;
+  left:25%;
+  right:25%;
+  bottom: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: #ffffffbf;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+
+.error-page .content{
+  max-width: 900px;
+  text-align: center;
+}
+
+.content .error404{
+  width: 25%;
+  line-height: 1em;
+}
+
+.content h4{
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #000;
+  max-width: 600px;
+  font-size: 2em;
+}
+
+.content p{
+  font-size: 1.2em;
+  color: #0d0d0d;
+}
+
+.content .btn{
+  margin: 25px 0;
+  display: inline-flex;
+}
+
+
+.content .btn a{
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  border: 2px solid var(--g);
+  color: var(--deg3);
+  font-weight: 500;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.content .btn a:hover{
+  color: #fff;
+  background:#4f4f4f;
+}
+
+@media (max-width: 700px) {
+  .error-page{
+   background: #ffffffbf;
+   position:absolute;
+   top:25%;
+   left:8%;
+   right:8%;
+   bottom:25%;
+  }
+  .content h4{
+   font-size: 1.5em;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   color: #000;
+   max-width: 800px;
+   font-size: 1.5em;
+ }
+  .error-page.content{
+   width: 400px;
+  }
+}
