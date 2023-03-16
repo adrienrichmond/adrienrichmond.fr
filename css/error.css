@@ -17,6 +17,11 @@ html,body{
 
 /* -------- Encard erreur 404 -------- */
 
+.error-page .content img.error404 {
+  width: 200px;
+  height: 200px; 
+  }
+
 .error-page{
   position: absolute;
   top:25%;
@@ -35,6 +40,13 @@ html,body{
   max-width: 900px;
   text-align: center;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
 
 .content .error404{
   width: 25%;
