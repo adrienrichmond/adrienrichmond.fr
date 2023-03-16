@@ -18,8 +18,8 @@ html,body{
 /* -------- Encard erreur 404 -------- */
 
 .error-page .content img.error404 {
-  width: 200px;
-  height: 200px; 
+  width: 150px;
+  height: 150px; 
   }
 
 .error-page{
@@ -92,6 +92,7 @@ html,body{
 }
 
 @media (max-width: 700px) {
+
   .error-page{
    background: #ffffffbf;
    position:absolute;
@@ -100,6 +101,10 @@ html,body{
    right:8%;
    bottom:25%;
   }
+  .error-page .content img.error404 {
+    width: 100px;
+    height: 100px; 
+    }  
   .content h4{
    font-size: 1.5em;
    margin-bottom: 20px;
