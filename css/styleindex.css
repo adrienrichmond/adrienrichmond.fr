@@ -29,6 +29,7 @@ footer {
 
 .estimation-text {
   font-size: 17px !important;
+  white-space: nowrap;
 }
 
 .estimation-wrapper {
@@ -102,6 +103,11 @@ header {
 }
 
 @media screen and (max-width:900px){
+
+  .estimation-text {
+    font-size: 12px !important;
+  }
+
   .navbar {
     padding: 0;
   }
