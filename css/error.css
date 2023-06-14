@@ -36,6 +36,7 @@ html,body{
   box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
 }
 
+
 .error-page .content{
   max-width: 900px;
   text-align: center;
@@ -56,8 +57,7 @@ html,body{
 .content h4{
   font-size: 1.5em;
   margin-bottom: 20px;
-  text-transform: uppercase;
-  color: #000;
+  color: #8d6315;
   max-width: 600px;
   font-size: 2em;
 }

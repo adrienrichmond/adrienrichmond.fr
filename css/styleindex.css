@@ -25,6 +25,30 @@ footer {
   color: white;
   }
 
+/* -------- Texte Délai -------- */
+
+.estimation-text {
+  font-size: 17px !important;
+}
+
+.estimation-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.loading-logo {
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/loading.gif');
+  background-size: cover;
+  animation: spin 2s linear infinite;
+}
+
+.estimation-text {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
 /* -------- Menu -------- */
 
 header {
@@ -122,16 +146,3 @@ header {
     font-size: 1.2em;
 }
 }
-
-  
-/* -------- Eléments du Site -------- */
-
-/*.logo {
-  position: absolute;
-  right: 930px;
-  bottom: 35px;
-  align-items: center;
-  width: 45px;
-  border-radius: 50%;
-  margin-top: 50px;
-}*/
