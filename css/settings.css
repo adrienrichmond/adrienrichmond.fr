@@ -12,7 +12,7 @@
 /* -------- Couleurs Site -------- */
 
 body{
-  --bgcolor:linear-gradient(90deg, #2a3235, #4f4f4f);
+  --bgcolor:#2a3235;
   --textcolor: #fff;
   --maincolor: #a9a9a9;
 }
