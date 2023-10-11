@@ -1,11 +1,11 @@
 
 /* -------- Section 3 (Contact) -------- */
 
-.section3 {
+  .section3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 70vh;
   }
   
   .section3-content {
@@ -78,7 +78,7 @@
   @media (max-width : 1090px){
 
     .section3{
-      max-width: none;
+      height: 100vh;
     }
 
     .section3-content h1{
