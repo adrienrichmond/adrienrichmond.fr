@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+
+   <!--Titre Page-->
+  <title>Adrien Richmond - En construction </title>
+
+  <!--Détails du Site-->
+  <meta name="description" content="Author: Adrien Richmond">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Lien du Site-->
+  <link rel="stylesheet" type="text/css" href="css/error.css">
+  <link rel="stylesheet" type="text/css" href="css/settings.css">
+  <link rel="shortcut icon" type="logo/png" href="img/logo.png">
+  
+</head>
+
+<body>
+<!--Front End Site-->
+<content>
+  <div class="error-page">
+    <div class="content">
+      <img class="error404" type="logo" src="img/construction.png">
+      <h4>Oups ! Page en construction</h4>
+      <p>Il semblerait que cette page soit en travaux, réessayez plus tard</p>
+      <div class="btn">
+      <a href="index">Accueil</a>
+      </div>
+    </div>
+  </div>
+</content>
+</body>
+
+  <!--Liens JS-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script> 
+    document.addEventListener("DOMContentLoaded", function () {
+    var currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "dark") {
+      // Appliquer le mode sombre
+      document.querySelector('body').classList.add("dark-mode");
+      document.getElementById("theme-icon").classList.remove("bx-sun");
+      document.getElementById("theme-icon").classList.add("bx-moon");
+      // Changer l'image du logo pour le mode sombre
+      document.querySelector('.logo img').src = 'img/logodark.png';
+    } else {
+      // Appliquer le mode clair (par défaut)
+      document.querySelector('body').classList.remove("dark-mode");
+      document.getElementById("theme-icon").classList.remove("bx-moon");
+      document.getElementById("theme-icon").classList.add("bx-sun");
+      // Changer l'image du logo pour le mode clair
+      document.querySelector('.logo img').src = 'img/logoclair.png';
+    }
+  });
+  </script>
+</html>

@@ -116,4 +116,8 @@ html,body{
   .error-page.content{
    width: 400px;
   }
+  .error-page .content img.error404 {
+    width: 100px;
+    height: 100px; 
+    }
 }
