@@ -1,3 +1,27 @@
+# 🌐 Site Web d'Adrien
 
-# devsiteweb
-Dev privé de la page web d'Adrien
+Site Web d'Adrien visant à un premier projet de développement : Liens Sociaux / Portfolio
+
+## ❗ Informations
+
+#### Hébergement :  https://pulseheberg.com/
+
+
+## 🧩 Développeurs
+
+- [@adrienrichmond](https://github.com/adrienrichmond)
+
+
+## 💻 Accéder au site
+
+#### Site : https://adrienrichmond.fr 
+
+
+## 🔐 Versions
+
+#### Dev 1 : ` Page de développpement + Liens Réseaux`
+
+
+## 🔨 Support
+
+Pour toutes informations : contact@adrienrichmond.fr
