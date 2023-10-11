@@ -13,21 +13,10 @@
    <!--Lien du Site-->
   <link rel="stylesheet" type="text/css" href="css/error.css">
   <link rel="stylesheet" type="text/css" href="css/settings.css">
-  <link rel="stylesheet" type="text/css" href="css/styleindex.css">
   <link rel="shortcut icon" type="logo/png" href="img/logo.png">
   
 </head>
 <body>
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6B7TZ2M8ZS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6B7TZ2M8ZS');
-</script>
 
   <!--Front End Site-->
   
@@ -35,12 +24,33 @@
     <div class="content">
       <img class="error404" type="logo" src="img/maintenance.png">
       <h4>Site actuellement en Maintenance</h4>
-      <p>Veuillez réessayer plus tard</p>
+      <p>Merci de votre patience</p>
       <div class="btn">
-      <a href="index">Rafraichir</a>
+      <a href="index">Réessayer</a>
       </div>
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  var currentTheme = localStorage.getItem("theme");
+  if (currentTheme === "dark") {
+    // Appliquer le mode sombre
+    document.querySelector('body').classList.add("dark-mode");
+    document.getElementById("theme-icon").classList.remove("bx-sun");
+    document.getElementById("theme-icon").classList.add("bx-moon");
+    // Changer l'image du logo pour le mode sombre
+    document.querySelector('.logo img').src = 'img/logodark.png';
+  } else {
+    // Appliquer le mode clair (par défaut)
+    document.querySelector('body').classList.remove("dark-mode");
+    document.getElementById("theme-icon").classList.remove("bx-moon");
+    document.getElementById("theme-icon").classList.add("bx-sun");
+    // Changer l'image du logo pour le mode clair
+    document.querySelector('.logo img').src = 'img/logoclair.png';
+  }
+});
+</script>
 
 </body>
 </html>

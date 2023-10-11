@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 
    <!--Titre Page-->
-  <title>Adrien Richmond - Erreur 404 </title>
+  <title>Adrien Richmond - Non Autorisé </title>
 
   <!--Détails du Site-->
   <meta name="description" content="Author: Adrien Richmond">
@@ -17,26 +17,22 @@
   
 </head>
 
-<body>
 <!--Front End Site-->
 <content>
   <div class="error-page">
     <div class="content">
-      <img class="error404" type="logo" src="img/error404.png">
-      <h4>Oups ! Page non trouvée</h4>
-      <p>Il semblerais que la page que vous cherchez n'existe pas</p>
-      <div class="btn">
-      <a href="index">Accueil</a>
+      <img class="error404" type="logo" src="img/unauthorized.png">
+      <h4>Non autorisé</h4>
+      <p>Vous n'avez actuellement pas accès à la page demandée</p>
       </div>
     </div>
   </div>
 </content>
-</body>
 
+<body>
   <!--Liens JS-->
   <script type="text/javascript" src="js/script.js"></script>
-  <script> 
-    document.addEventListener("DOMContentLoaded", function () {
+  <script>document.addEventListener("DOMContentLoaded", function () {
     var currentTheme = localStorage.getItem("theme");
     if (currentTheme === "dark") {
       // Appliquer le mode sombre
@@ -55,4 +51,5 @@
     }
   });
   </script>
+</body>
 </html>

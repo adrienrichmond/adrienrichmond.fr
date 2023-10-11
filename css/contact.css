@@ -1,0 +1,90 @@
+
+/* -------- Section 3 (Contact) -------- */
+
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  }
+  
+  .section3-content {
+    color: var(--textcolor);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .section3-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--textcolor);
+  }
+  
+  .contact-form {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .message-container{
+    flex-direction: column;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #495fcb;
+  }
+  
+  @media (max-width : 1090px){
+
+    .section3{
+      max-width: none;
+    }
+
+    .section3-content h1{
+      font-size: 30px;
+    }
+    .section3-content{
+      flex-direction: column;
+    }
+  }

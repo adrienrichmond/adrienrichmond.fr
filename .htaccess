@@ -1,16 +1,29 @@
 ErrorDocument 404 /404.html
 
-# Page de maintenance
-#RewriteEngine on
-#RewriteCond %{REQUEST_URI} !/maintenance.html$
-#RewriteCond %{REQUEST_URI} !css/maintenance.css$
-#RewriteCond %{REQUEST_URI} !css/settings.css$
-#RewriteCond %{REQUEST_URI} !img/maintenance.png$
-#RewriteCond %{REMOTE_ADDR} !^77/.130./153/.25
-#RewriteRule $ /maintenance.html [R=302,L]
+# 1 pour activer, 0 désactivation
+SetEnv maintenance_mode 0
+SetEnv unauthorized_mode 0
 
-#Redirection HTML
-RewriteEngine on
+RewriteEngine On
+RewriteCond %{ENV:maintenance_mode} 1
+RewriteCond %{REQUEST_URI} !/maintenance.html$ [NC]
+RewriteCond %{REQUEST_URI} !css/error.css$
+RewriteCond %{REQUEST_URI} !css/settings.css$
+RewriteCond %{REQUEST_URI} !img/maintenance.png$
+RewriteCond %{REMOTE_ADDR} !=88.173.208.208
+RewriteCond %{REMOTE_ADDR} !=77.130.153.90
+RewriteRule ^(.*)$ /maintenance.html [R=302,L]
+
+RewriteCond %{ENV:unauthorized_mode} 1
+RewriteCond %{REQUEST_URI} !/unauthorized.html$ [NC]
+RewriteCond %{REQUEST_URI} !css/error.css$
+RewriteCond %{REQUEST_URI} !css/settings.css$
+RewriteCond %{REQUEST_URI} !img/unauthorized.png$
+RewriteCond %{REMOTE_ADDR} !=88.173.208.208
+RewriteCond %{REMOTE_ADDR} !=77.130.153.90
+RewriteRule ^(.*)$ /unauthorized.html [R=302,L]
+
+# Redirection HTML
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]

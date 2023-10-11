@@ -4,30 +4,29 @@
 <meta charset="UTF-8">
 
    <!--Titre Page-->
-  <title>Adrien Richmond</title>
+  <title>Adrien Richmond - Dev</title>
 
   <!--Détails du Site-->
   <meta name="description" content="Author: Adrien Richmond">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <!--Lien du Site-->
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/experiences.css">
   <link rel="stylesheet" type="text/css" href="css/navbar.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
   <link rel="stylesheet" type="text/css" href="css/settings.css">
-  <link rel="stylesheet" type="text/css" href="css/animation.css">
   <link rel="shortcut icon" type="logo/png" href="img/logo.png">
   <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
-
 <body>
+
   <!--Navbar-->
 <header>
     <a href="index" class="logo"><img src="img/logoclair.png"></img><span>Adrien</span></a>
     <ul class="navbar">
-      <li><a href="index" class="active">Accueil</a></li>
+      <li><a href="index">Accueil</a></li>
       <li><a href="about">À propos</a></li>
-      <li><a href="experiences">Expériences</a></li>
+      <li><a href="experiences" class="active">Expériences</a></li>
 
     <!--Social Mobile-->
     <div class="socialogomobile">
@@ -59,43 +58,18 @@
 
   <!-- Mode Sombre -->
   <div class="extra-icon">
-    <i id="theme-icon" class='bx bx-sun' onclick="toggleDarkMode()"></i>
+  <i id="theme-icon" class='bx bx-moon' onclick="toggleDarkMode()"></i>
   </div>
 </header>
 
 <!--Contenu page-->
 
-  <section class="section1">
-    <div class="section1-content">
-      <h1>Hey, c'est Adrien</h1>
-          <div class="txtanimation">
-            <div class="static-txt">Je suis</div>
-              <ul class="dynamic-txts">
-              <li><span>Étudiant</span></li>
-              <li><span>Développeur</span></li>
-              <li><span>Influenceur</span></li>
-              <li><span>Passioné</span></li>
-              </ul>
-          </div>
-              <p>Passionné d'informatique depuis mon plus jeune âge, j'exprime 
-              cette passion par la découverte de nouvelles notions numériques et informatiques. 
-              Je suis quelqu'un qui a l'esprit motivé, organisé et sérieux dans mes passions.</p>
-                <div class="btn-box">
-                  <a href="#section2">Découvrir</a>
-                  <a href="contact">Contact</a>
-                </div>
-                  <div class="profile-image">
-                    <img src="/img/me.png">
-                  </div>
-  </section>
-    </div>
+<section class="section1">
+  <div class="section1-content">
+    <h1>Expériences</h1>
+</section>
+  </div>
 
-  <section class="section2" id="section2">
-    <div class="section2-content">
-      <h1>🚧 En construction</h1>
-      <p>Le site est actuellement en construction : Toutes les pages ne sont pas encore disponibles</p>
-  </section>
-    
   <!--Bas de Page-->
 <footer class="sticky-footer">
     <ul>
@@ -105,22 +79,11 @@
     <p> ©2023 par Adrien avec ❤️</p>
 </footer>
 
-</main>
 </body>
 
   <!--Scripts -->
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/animation.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6B7TZ2M8ZS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6B7TZ2M8ZS');
-</script>
   <script>
       document.addEventListener("DOMContentLoaded", function () {
     var currentTheme = localStorage.getItem("theme");

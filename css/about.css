@@ -1,0 +1,23 @@
+/* -------- Section 1 -------- */
+
+.section1{
+    display: flex;
+    position: relative;
+    height: 80vh;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .section1-content {
+    position: relative;
+    max-width: 600px;
+    margin-left: 12%;
+  }
+  
+  .section1-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color:var(--textcolor);
+  }
+ 

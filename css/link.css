@@ -108,4 +108,7 @@ footer {
   .main{
       flex-direction: column;
   }
+  .footer{
+    display: none;
+  }
 }
