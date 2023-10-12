@@ -20,6 +20,7 @@ Site Web d'Adrien visant à un premier projet de développement : Liens Sociaux 
 ## 🔐 Versions
 
 #### Dev 1 : ` Page de développpement + Liens Réseaux`
+#### V1 : `Lancement partiel`
 
 
 ## 🔨 Support
