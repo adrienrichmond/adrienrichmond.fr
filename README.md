@@ -25,7 +25,7 @@ Site Web d'Adrien visant à un premier projet de développement : Liens Sociaux 
 
 ## ⚠️ Signalement de problèmes
 
-Si vous rencontrez des problèmes avec le bot ou souhaitez suggérer des améliorations, veuillez ouvrir un ticket dans la section "Issues" de ce référentiel.
-Ou me contacter directement : contact@adrienrichmond.fr
+Si vous rencontrez des problèmes avec le site ou souhaitez suggérer des améliorations, merci d'ouvrir un ticket dans la section "Issues".
+Vous pouvez également me contacter directement : contact@adrienrichmond.fr
 
 ---
