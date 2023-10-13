@@ -23,9 +23,9 @@ Site Web d'Adrien visant à un premier projet de développement : Liens Sociaux 
 #### Dev 1 : ` Page de développpement + Liens Réseaux`
 
 
-## ⚠️ Signalement de problèmes
+## 🔨 Support
 
-Si vous rencontrez des problèmes avec le site ou souhaitez suggérer des améliorations, merci d'ouvrir un ticket dans la section "Issues".
+Merci d'ouvrir un ticket dans la section "Issues".
 Vous pouvez également me contacter directement : contact@adrienrichmond.fr
 
 ---
