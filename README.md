@@ -19,10 +19,13 @@ Site Web d'Adrien visant à un premier projet de développement : Liens Sociaux 
 
 ## 🔐 Versions
 
-#### Dev 1 : ` Page de développpement + Liens Réseaux`
 #### V1 : `Lancement partiel`
+#### Dev 1 : ` Page de développpement + Liens Réseaux`
 
 
-## 🔨 Support
+## ⚠️ Signalement de problèmes
 
-Pour toutes informations : contact@adrienrichmond.fr
+Si vous rencontrez des problèmes avec le bot ou souhaitez suggérer des améliorations, veuillez ouvrir un ticket dans la section "Issues" de ce référentiel.
+Ou me contacter directement : contact@adrienrichmond.fr
+
+---
