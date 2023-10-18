@@ -142,23 +142,6 @@ html, body{
 
 /* -------- Section 2 (Compétences) -------- */
 
-.section2 {
-  height: 70vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section2-content{
-  color: var(--textcolor);
-  align-items: center;
-  justify-content: center;
-  background-color: var(--maincolor);
-  border-radius: 5px;
-  width: 60%;
-  padding: 20px;
-  margin: 20px;
-}
 
 /* -------- Section 3 (Contact) -------- */
 
