@@ -1,24 +1,61 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nom = $_POST["nom"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
-    $destinataire = "contact@adrienrichmond.fr";
-    $sujet = "Nouveau message de $nom";
 
-    $contenu = "Nom: $nom\n";
-    $contenu .= "Email: $email\n";
-    $contenu .= "Message:\n$message";
+$headers = 'MIME-Version: 1.0'."\r\n";
 
-    // En-têtes du courriel
-    $headers = "From: $nom <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
+// Récupération des données du formulaire
+$nom = $_POST["nom"];
+$prenom = $_POST["prenom"];
+$email = $_POST["email"];
+$sujet = $_POST["sujet"];
+$message = $_POST["message"];
 
-    // Envoi du courriel
-    if (mail($destinataire, $sujet, $contenu, $headers)) {
-        echo "Votre message a été envoyé avec succès. Je vous répondrais dès que possible.";
+// Vérifier si un fichier a été joint
+if (isset($_FILES["file"])) {
+    $file_name = $_FILES["file"]["name"];
+    $file_tmp = $_FILES["file"]["tmp_name"];
+    $file_size = $_FILES["file"]["size"];
+    $file_type = $_FILES["file"]["type"];
+
+    // Vérifier si le fichier a bien été téléchargé
+    if ($file_size > 0) {
+        $file = fopen($file_tmp, "rb");
+        $data = fread($file, $file_size);
+        fclose($file);
     } else {
-        echo "Une erreur s'est produite lors de l'envoi du message.";
+        $data = "";
     }
+} else {
+    $file_name = "";
+    $data = "";
 }
+
+// Envoi du mail
+$sujet = sprintf("FORMULAIRE DU SITE : %s", $sujet);
+
+// Ajouter un saut de ligne après le dernier en-tête
+$headers .= "Content-Type: multipart/mixed; boundary=\"boundary\"\r\n";
+$headers .= "\r\n";
+
+$message_body = "--boundary\r\n";
+$message_body .= "Content-type: text/plain; charset=\"UTF-8\"\r\n";
+$message_body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
+$message_body .= "$message\r\n";
+
+// Ajouter la pièce jointe
+if (!empty($data)) {
+    $message_body .= "--boundary\r\n";
+    $message_body .= "Content-Type: application/octet-stream; name=\"$file_name\"\r\n";
+    $message_body .= "Content-Transfer-Encoding: base64\r\n";
+    $message_body .= "Content-Disposition: attachment\r\n\r\n";
+    $message_body .= chunk_split(base64_encode($data)) . "\r\n";
+}
+
+// Fermer la frontière
+$message_body .= "--boundary--\r\n";
+
+// Envoi du mail
+mail("contact@adrienrichmond.fr", $sujet, $message_body, "From: $prenom $nom <$email>\r\n$headers");
+
+// Affichage d'un message de confirmation
+echo "Votre message a bien été envoyé.";
 ?>
