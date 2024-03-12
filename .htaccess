@@ -1,7 +1,7 @@
 ErrorDocument 404 /404.html
 
 # 1 pour activer, 0 désactivation
-SetEnv maintenance_mode 0
+SetEnv maintenance_mode 1
 SetEnv unauthorized_mode 0
 
 RewriteEngine On
